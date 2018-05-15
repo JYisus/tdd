@@ -25,9 +25,11 @@ function Raices(a, b, c)
       RaizImaginaria2 = -RaizDiscriminante/DobleA;
    }
    
+   
    return [[RaizReal1, RaizImaginaria1], [RaizReal2, RaizImaginaria2]];
 }
 assert.deepEqual(Raices(1, -5, 0), [[5, 0], [0, 0]]);
 assert.deepEqual(Raices(2, 5, 0), [[0, 0], [-2.5, 0]]);
 assert.deepEqual(Raices(1, 5, 0), [[0, 0], [-5, 0]]);
 assert.deepEqual(Raices(1, 0, 1), [[0, 1], [0, -1]]);
+assert.deepEqual(Raices(1, -2, 5), [[1, 2], [1, -2]]);
